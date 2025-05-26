@@ -2,7 +2,7 @@
 
 Uma **coleção de ícones PNG com reconhecimento inteligente de nomes** de ingredientes — projetado para apps de receita, alimentação saudável e aplicativos gastronômicos brasileiros/multilíngues!
 
-![Banner do br_ingredientes_icons](banner.png)
+![Banner do br_ingredientes_icons](banner.jpg)
 
 ---
 
