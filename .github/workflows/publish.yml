@@ -19,12 +19,19 @@ jobs:
         with:
           flutter-version: "3.13.9"
           channel: 'stable'
-          # cache: 'true'
+          cache: 'true'
+
+      - name: Setup credentials
+        run: |
+          mkdir -p ~/.pub-cache
+          echo "${{ secrets.PUB_CREDENTIALS }}" > ~/.pub-cache/credentials.json
 
       - name: Get dependencies
         run: flutter pub get
 
       - name: Publish package
-        run: y | flutter pub publish  
+        run: flutter pub publish --force
+       # env:
+        #  PUB_DEV_ACCESS_TOKEN: ${{ secrets.PUB_DEV_ACCESS_TOKEN }} 
 
       
