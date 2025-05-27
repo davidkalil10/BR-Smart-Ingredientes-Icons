@@ -25,6 +25,6 @@ jobs:
         run: flutter pub get
 
       - name: Publish package
-        run: flutter pub publish  
+        run: y | flutter pub publish  
 
       
