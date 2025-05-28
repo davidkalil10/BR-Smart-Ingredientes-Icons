@@ -22,16 +22,16 @@ jobs:
           cache: 'true'
 
       - name: Setup credentials
-        run: |
-          mkdir -p ~/.pub-cache
-          echo "${{ secrets.PUB_CREDENTIALS }}" > ~/.pub-cache/credentials.json
+       # run: |
+       #   mkdir -p ~/.pub-cache
+       #   echo "${{ secrets.PUB_CREDENTIALS }}" > ~/.pub-cache/pub-credentials.json
 
       - name: Get dependencies
         run: flutter pub get
 
       - name: Publish package
         run: flutter pub publish --force
-       ## env:
-        #  PUB_DEV_ACCESS_TOKEN: ${{ secrets.PUB_DEV_ACCESS_TOKEN }} 
+        env:
+          PUB_DEV_ACCESS_TOKEN: ${{ secrets.PUB_CREDENTIALS }} 
 
       
