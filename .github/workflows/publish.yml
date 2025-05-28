@@ -24,7 +24,9 @@ jobs:
       - name: Setup pub credentials
         run: |
           mkdir -p ~/.pub-cache
-          echo "${{ secrets.PUB_CREDENTIALS }}" > ~/.pub-cache/credentials.json
+          cat > ~/.pub-cache/credentials.json << EOF
+          ${{ secrets.PUB_CREDENTIALS }}
+          EOF
 
       - name: Debug credentials file content
         run: cat ~/.pub-cache/credentials.json
