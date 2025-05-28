@@ -26,6 +26,9 @@ jobs:
           mkdir -p ~/.pub-cache
           echo "${{ secrets.PUB_CREDENTIALS }}" > ~/.pub-cache/credentials.json
 
+      - name: Debug credentials file content
+        run: cat ~/.pub-cache/credentials.json
+
       - name: Get dependencies
         run: flutter pub get
 
