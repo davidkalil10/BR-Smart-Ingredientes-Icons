@@ -21,7 +21,10 @@ jobs:
           channel: 'stable'
           cache: 'true'
 
-      - name: Setup pub credentials
+      - name: Ensure pub-cache directory exists
+        run: mkdir -p ~/.pub-cache
+      
+      - name: Save credentials.json
         run: echo '${{ secrets.PUB_CREDENTIALS }}' > ~/.pub-cache/credentials.json
 
       - name: Debug credentials file content
