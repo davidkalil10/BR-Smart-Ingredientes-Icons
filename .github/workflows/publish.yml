@@ -22,12 +22,10 @@ jobs:
           cache: 'true'
 
       - name: Setup pub credentials
-        run: |
-          mkdir -p ~/.pub-cache
-          printf '%s' "${{ secrets.PUB_CREDENTIALS }}" > ~/.pub-cache/credentials.json
+        run: echo '${{ secrets.PUB_CREDENTIALS }}' > ~/.pub-cache/credentials.json
 
       - name: Debug credentials file content
-        run: cat ~/.pub-cache/credentials.json
+        run: cat ~/.pub-cache/credentials.json | jq .
 
 
       - name: Get dependencies
