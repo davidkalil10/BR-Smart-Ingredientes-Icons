@@ -24,16 +24,8 @@ jobs:
       - name: Ensure pub-cache directory exists
         run: mkdir -p ~/.pub-cache
       
-     # - name: Save credentials.json
-     #   run: echo '${{ secrets.PUB_CREDENTIALS }}' > ~/.pub-cache/credentials.json
-
-      - name: Gravar arquivo credentials.json corretamente
-        run: |
-          printf "%s" "${{ secrets.PUB_CREDENTIALS }}" > ~/.pub-cache/credentials.json
-
-      - name: Debug credentials file content
-        run: cat ~/.pub-cache/credentials.json | jq .
-
+      - name: Save credentials.json
+        run: echo '${{ secrets.PUB_CREDENTIALS }}' > ~/.pub-cache/credentials.json
 
       - name: Get dependencies
         run: flutter pub get
