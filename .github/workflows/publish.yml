@@ -21,6 +21,9 @@ jobs:
           channel: 'stable'
           cache: 'true'
 
+      - name: Debug secret content
+        run: echo "${{ secrets.PUB_CREDENTIALS }}"
+
       - name: Setup pub credentials
         run: |
           mkdir -p ~/.pub-cache
@@ -28,6 +31,7 @@ jobs:
 
       - name: Debug credentials file content
         run: cat ~/.pub-cache/credentials.json
+
 
       - name: Get dependencies
         run: flutter pub get
