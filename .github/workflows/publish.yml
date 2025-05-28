@@ -31,9 +31,6 @@ jobs:
         run: |
           printf "%s" "${{ secrets.PUB_CREDENTIALS }}" > ~/.pub-cache/credentials.json
 
-      - name: Validar JSON
-        run: jq . ~/.pub-cache/credentials.json
-
       - name: Debug credentials file content
         run: cat ~/.pub-cache/credentials.json | jq .
 
