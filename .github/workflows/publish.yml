@@ -24,8 +24,15 @@ jobs:
       - name: Ensure pub-cache directory exists
         run: mkdir -p ~/.pub-cache
       
-      - name: Save credentials.json
-        run: echo '${{ secrets.PUB_CREDENTIALS }}' > ~/.pub-cache/credentials.json
+     # - name: Save credentials.json
+     #   run: echo '${{ secrets.PUB_CREDENTIALS }}' > ~/.pub-cache/credentials.json
+
+      - name: Gravar arquivo credentials.json corretamente
+        run: |
+          printf "%s" "${{ secrets.PUB_CREDENTIALS }}" > ~/.pub-cache/credentials.json
+
+      - name: Validar JSON
+        run: jq . ~/.pub-cache/credentials.json
 
       - name: Debug credentials file content
         run: cat ~/.pub-cache/credentials.json | jq .
