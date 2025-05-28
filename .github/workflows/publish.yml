@@ -21,9 +21,6 @@ jobs:
           channel: 'stable'
           cache: 'true'
 
-      - name: Debug secret content
-        run: echo "${{ secrets.PUB_CREDENTIALS }}" | jq .
-
       - name: Setup pub credentials
         run: |
           mkdir -p ~/.pub-cache
