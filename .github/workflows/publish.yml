@@ -22,10 +22,17 @@ jobs:
           cache: 'true'
 
       - name: Ensure pub-cache directory exists
-        run: mkdir -p ~/.pub-cache
+        run: mkdir -p $HOME/.config/dart
       
       - name: Save credentials.json
-        run: echo '${{ secrets.PUB_CREDENTIALS }}' > ~/.pub-cache/credentials.json
+        run: echo '${{ secrets.PUB_CREDENTIALS }}' > $HOME/.config/dart/pub-credentials.json
+
+      # Opcional, mas recomendado para cobrir todas as bases:
+      - name: Create legacy .pub-cache directory
+        run: mkdir -p $HOME/.pub-cache
+
+      - name: Write pub credentials to legacy path
+        run: echo '${{ secrets.PUB_CREDENTIALS }}' > $HOME/.pub-cache/credentials.json
 
       - name: Get dependencies
         run: flutter pub get
