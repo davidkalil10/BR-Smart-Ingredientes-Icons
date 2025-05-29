@@ -17,16 +17,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4      
       
-      - name: Check if pubspec.yaml version was increased
+      - name: Check version increase (Pull Request)
         if: github.event_name == 'pull_request'
-        run: |
-          git fetch origin main:main
-          PREVIOUS_VERSION=$(grep '^version:' pubspec.yaml | sed 's/version: //')
-          PREVIOUS_VERSION_MAIN=$(git show main:pubspec.yaml | grep '^version:' | sed 's/version: //')
-          if [ "$PREVIOUS_VERSION" == "$PREVIOUS_VERSION_MAIN" ]; then
-            echo "Version was not increased. Failing the workflow."
-            exit 1
-          fi
+        uses: ./.github/workflows/check-pubspec-version.yml
+        with:
+          comparison_type: 'pr'
+
+      - name: Check version increase (Push to main)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: ./.github/workflows/check-pubspec-version.yml
+        with:
+          comparison_type: 'commit'
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
