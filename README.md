@@ -33,6 +33,10 @@ BrIngredienteIconSmart(
 
 Reconhece 'queijo', 'cheese', 'queso', 'fromage' e variantes.
 
+## 💡 Exemplo de Uso
+
+Veja um exemplo completo de implementação no arquivo [`example/lib/main.dart`](example/lib/main.dart), que demonstra como criar uma grade de ingredientes com ícones em cards estilizados usando o widget `BrIngredienteIconSmart`.
+
 ## 🧠 Buscas inteligentes
 Aceita o nome do ingrediente:
 
@@ -42,13 +46,55 @@ Aceita o nome do ingrediente:
 - **em Francês:** ail, thym, sucre, roquette...
 e até sinônimos/femininos/plurais comuns!
 
+### 🔍 Testando a Busca Inteligente
+
+```dart
+// Todos esses exemplos vão exibir o mesmo ícone de queijo:
+BrIngredienteIconSmart(nome: 'queijo', size: 48),    // Português
+BrIngredienteIconSmart(nome: 'cheese', size: 48),    // Inglês
+BrIngredienteIconSmart(nome: 'queso', size: 48),     // Espanhol
+BrIngredienteIconSmart(nome: 'fromage', size: 48),   // Francês
+BrIngredienteIconSmart(nome: 'mozzarella', size: 48), // Tipo específico
+
+// Funcionam também com pequenas variações:
+BrIngredienteIconSmart(nome: 'lettuce', size: 48),   // -> alface
+BrIngredienteIconSmart(nome: 'strawberry', size: 48), // -> morango
+BrIngredienteIconSmart(nome: 'salt', size: 48),      // -> sal
+BrIngredienteIconSmart(nome: 'bread', size: 48),     // -> pao_de_forma
+```
+
 ## 📦 Instalação
 No seu pubspec.yaml:
-```
+```yaml
 dependencies:
   br_ingredientes_icons: ^1.0.0
 ```
 Depois:
+```bash
+flutter pub get
+```
+
+## 🚀 Executando o Exemplo
+
+Para ver o exemplo funcionando:
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/davidkalil10/BR-Smart-Ingredientes-Icons.git
+cd BR-Smart-Ingredientes-Icons
+```
+
+2. Navegue até o diretório do exemplo:
+```bash
+cd example
+```
+
+3. Execute o app:
+```bash
+flutter run
+```
+
+O exemplo mostra uma grade com todos os ingredientes disponíveis na biblioteca, demonstrando como usar o widget `BrIngredienteIconSmart` em uma interface real.
 ```
 flutter pub get
 ```
@@ -116,12 +162,35 @@ O widget BrIngredienteIconSmart recebe o nome digitado, busca automaticamente no
 Se não encontra, devolve o fallback (por padrão, default.png).
 
 ## ✏️ Como contribuir
-Abra issues e pull requests no GitHub ! E se puder, deixe um bit- café! :) Carteira para depósito: 1AuFGG7jFsJYNGURQwLDeXgZ5xNXsSAuAL
 
-Quer um ingrediente novo? Envie o PNG + nomes/sinônimos!
-Sugestão de melhorias? Ajude a tornar esse pacote referência!
-📄 Licença
+Abra issues e pull requests no [GitHub](https://github.com/davidkalil10/BR-Smart-Ingredientes-Icons)! 
+
+### 🎯 Formas de contribuir:
+- **Novos ingredientes**: Envie o PNG + nomes/sinônimos!
+- **Traduções**: Adicione suporte a novos idiomas
+- **Melhorias**: Sugestões para tornar esse pacote referência!
+- **Documentação**: Ajude a melhorar exemplos e tutoriais
+- **Testes**: Reporte bugs ou problemas de compatibilidade
+
+### 📁 Estrutura do Projeto
+```
+br_ingredientes_icons/
+├── assets/icons/          # Ícones PNG dos ingredientes
+├── example/              # App de exemplo (demonstração)
+├── lib/
+│   ├── br_ingredientes_icons.dart    # Widget principal
+│   └── ingredientes_data.dart        # Mapeamento de aliases
+├── pubspec.yaml          # Configuração do package
+└── README.md            # Esta documentação
+```
+
+### 🔗 Links Úteis
+- **Repositório**: https://github.com/davidkalil10/BR-Smart-Ingredientes-Icons
+- **pub.dev**: https://pub.dev/packages/br_ingredientes_icons
+- **Issues**: https://github.com/davidkalil10/BR-Smart-Ingredientes-Icons/issues
+
+## 📄 Licença
 MIT — por David Kalil Braga
 
-⭐ Se usar, deixe um star no repositório ou cite nos seus apps!
+⭐ Se usar este package, deixe um star no repositório ou cite nos seus apps!
 

@@ -1,0 +1,93 @@
+name: Check pubspec Version
+
+on:
+  workflow_call:
+    inputs:
+      comparison_type:
+        description: 'Tipo de comparação: "pr" (compara com main) ou "commit" (compara com commit anterior)'
+        required: true
+        type: string
+      pubspec_path:
+        description: 'Caminho para o arquivo pubspec.yaml'
+        required: false
+        type: string
+        default: 'pubspec.yaml'
+    outputs:
+      current_version:
+        description: 'Versão atual do pubspec.yaml'
+        value: ${{ jobs.check-version.outputs.current_version }}
+      previous_version:
+        description: 'Versão anterior (main ou commit anterior)'
+        value: ${{ jobs.check-version.outputs.previous_version }}
+
+jobs:
+  check-version:
+    name: Check pubspec version
+    runs-on: ubuntu-latest
+    outputs:
+      current_version: ${{ steps.get-versions.outputs.current_version }}
+      previous_version: ${{ steps.get-versions.outputs.previous_version }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Get versions and compare
+        id: get-versions
+        shell: bash
+        run: |
+          # Função para extrair versão do pubspec.yaml
+          extract_version() {
+            grep '^version:' "$1" | sed 's/version: //' | tr -d ' '
+          }
+          
+          # Obtém versão atual
+          CURRENT_VERSION=$(extract_version ${{ inputs.pubspec_path }})
+          echo "current_version=$CURRENT_VERSION" >> $GITHUB_OUTPUT
+          
+          # Obtém versão anterior baseada no tipo de comparação
+          if [ "${{ inputs.comparison_type }}" = "pr" ]; then
+            # Para PR: compara com a versão na branch main
+            git fetch origin main:main
+            PREVIOUS_VERSION=$(git show main:${{ inputs.pubspec_path }} | extract_version /dev/stdin)
+            COMPARISON_TEXT="branch main"
+          elif [ "${{ inputs.comparison_type }}" = "commit" ]; then
+            # Necessário implementar, não encontrei forma de pegar o commit anterior ao push
+            # Talvez o evento push do github tenha uma variável que armazena o commit anterior
+            # checar documentação: https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#push
+            exit 0
+          else
+            echo "❌ Tipo de comparação inválido: ${{ inputs.comparison_type }}"
+            exit 1
+          fi
+          
+          echo "previous_version=$PREVIOUS_VERSION" >> $GITHUB_OUTPUT
+          
+          # Exibe as versões
+          echo "📋 Versão atual: $CURRENT_VERSION"
+          echo "📋 Versão $COMPARISON_TEXT: $PREVIOUS_VERSION"
+          
+          # Verifica se a versão foi aumentada
+          if [ -z "$PREVIOUS_VERSION" ]; then
+            case "$COMPARISON_TEXT" in
+              "primeiro commit")
+                echo "✅ Primeiro commit detectado - versão inicial: $CURRENT_VERSION"
+                ;;
+              "arquivo novo")
+                echo "✅ Novo arquivo pubspec.yaml adicionado - versão inicial: $CURRENT_VERSION"
+                ;;
+              "primeiro push")
+                echo "✅ Primeiro push detectado - versão inicial: $CURRENT_VERSION"
+                ;;
+              *)
+                echo "✅ Versão aceita (sem comparação): $CURRENT_VERSION"
+                ;;
+            esac
+          elif [ "$CURRENT_VERSION" = "$PREVIOUS_VERSION" ]; then
+            echo "❌ Versão não foi aumentada em relação ao $COMPARISON_TEXT"
+            echo "   Versão atual: $CURRENT_VERSION"
+            echo "   Versão $COMPARISON_TEXT: $PREVIOUS_VERSION"
+            exit 1
+          else
+            echo "✅ Versão aumentada de $PREVIOUS_VERSION para $CURRENT_VERSION"
+          fi

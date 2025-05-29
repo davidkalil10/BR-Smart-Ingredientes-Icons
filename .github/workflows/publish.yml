@@ -1,19 +1,30 @@
 name: Github Release
+description: 'Publica o pacote Flutter no pub.dev quando a versão é aumentada'
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
-  build:
-    name: Build Android Application
+  validate:
+    name: Validate pubspec version
+    uses: ./.github/workflows/check-pubspec-version.yml
+    with:
+      comparison_type: ${{ github.event_name == 'pull_request' && 'pr' || 'commit' }} # Indica se é um Pull Request ou Push na branch que disparou esse evento
+
+  publish:
+    name: Publish to pub.dev
     runs-on: ubuntu-latest
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' # só executa quando subir código na branch main
 
     steps:
       - uses: actions/checkout@v4
-
+      
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -39,7 +50,3 @@ jobs:
 
       - name: Publish package
         run: flutter pub publish --force
-      #  env:
-       #   PUB_TOKEN: ${{ secrets.PUB_CREDENTIALS }} 
-
-      
