@@ -69,4 +69,40 @@ const ingredientAliases = {
   "tomate": [ "tomate", "tomato", "tomate", "tomate" ],
   "tomilho": [ "tomilho", "thyme", "tomillo", "thym" ],
   "vinagre": [ "vinagre", "vinegar", "vinagre", "vinaigre" ],
+  "abacate": [ "abacate", "avocado", "aguacate", "avocat" ],
+  "abacaxi": [ "abacaxi", "pineapple", "piña", "ananas" ],
+  "abobora": [ "abóbora", "pumpkin", "calabaza", "citrouille" ], // "squash" também é comum em EN para alguns tipos
+  "agua": [ "água", "water", "agua", "eau" ],
+  "aliche": [ "aliche", "anchovy", "anchoa", "anchois" ], // Alici é mais específico, anchova é mais genérico
+  "azeitona": [ "azeitona", "olive", "aceituna", "olive" ],
+  "bacon": [ "bacon", "bacon", "tocino", "bacon" ], // ou "panceta" em ES
+  "batata": [ "batata", "potato", "patata", "pomme de terre" ],
+  "batata_doce": [ "batata doce", "sweet potato", "batata", "patate douce" ], // "boniato" ou "camote" também em ES
+  "batata_frita": [ "batata frita", "french fries", "patatas fritas", "frites" ], // "chips" em UK English
+  "batata_palha": [ "batata palha", "shoestring potatoes", "patatas paja", "pommes paille" ],
+  "brocolis": [ "brócolis", "broccoli", "brócoli", "brocoli" ],
+  "cacau": [ "cacau", "cocoa", "cacao", "cacao" ],
+  "canela": [ "canela", "cinnamon", "canela", "cannelle" ],
+  "carne_seca": [ "carne seca", "dried meat", "carne seca", "viande séchée" ], // "jerky" é um tipo específico em EN
+  "chocolate": [ "chocolate", "chocolate", "chocolate", "chocolat" ],
+  "coco": [ "coco", "coconut", "coco", "noix de coco" ],
+  "ervilha": [ "ervilha", "pea", "guisante", "petit pois" ], // "arveja" também em ES
+  "escarola": [ "escarola", "escarole", "escarola", "scarole" ], // "endive" também relacionado
+  "gengibre": [ "gengibre", "ginger", "jengibre", "gingembre" ],
+  "grao_de_bico": [ "grão de bico", "chickpea", "garbanzo", "pois chiche" ],
+  "kiwi": [ "kiwi", "kiwi", "kiwi", "kiwi" ],
+  "m_e_m": [ "m&m", "m&m's", "m&m's", "m&m's" ], // Nome da marca, geralmente não traduzido
+  "mandioca_frita": [ "mandioca frita", "fried cassava", "yuca frita", "manioc frit" ], // "cassava fries"
+  "mandioquinha": [ "mandioquinha", "arracacha", "arracacha", "pomme de terre-céleri" ], // Também "batata baroa", "batata salsa"
+  "manga": [ "manga", "mango", "mango", "mangue" ],
+  "maracuja": [ "maracujá", "passion fruit", "maracuyá", "fruit de la passion" ], // "parchita" em alguns lugares ES
+  "oleo": [ "óleo", "oil", "aceite", "huile" ],
+  "ovomaltine": [ "ovomaltine", "ovaltine", "ovomaltina", "ovomaltine" ], // Nome da marca
+  "pepperoni": [ "pepperoni", "pepperoni", "pepperoni", "pepperoni" ],
+  "pera": [ "pera", "pear", "pera", "poire" ],
+  "pimenta_dedo_de_moca": [ "pimenta dedo de moça", "dedo de moça chili", "ají dedo de moça", "piment dedo de moça" ], // Menos comum internacionalmente, pode usar "red chili" como genérico
+  "polenta": [ "polenta", "polenta", "polenta", "polenta" ],
+  "salsicha": [ "salsicha", "sausage", "salchicha", "saucisse" ],
+  "tomate_seco": [ "tomate seco", "sun-dried tomato", "tomate seco", "tomate séchée" ],
+  "uva": [ "uva", "grape", "uva", "raisin" ]
 };

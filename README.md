@@ -124,27 +124,36 @@ GridView.count(
   ).toList(),
 )
 ```
-| Ingredientes             |                         |                        |                         |
-|--------------------------|-------------------------|------------------------|-------------------------|
-| abobrinha                | acucar                  | alecrim                | alface                  |
-| alho                     | arroz                   | atum                   | aveia                   |
-| azeite                   | banana                  | berinjela              | beterraba               |
-| calabresa                | caldo_de_carne          | caldo_de_legumes       | carne_moida             |
-| cebola                   | cebola_roxa             | cebolinha              | cenoura                 |
-| champignon               | couve                   | coxa_de_frango         | cravo_da_india          |
-| creme_de_leite           | espinafre               | farinha_de_rosca       | farinha_de_trigo        |
-| feijao                   | fermento                | frango_desfiado        | ketchup                 |
-| laranja                  | leite                   | leite_condensado       | limao                   |
-| lombo_canadense          | louro                   | maca                   | maionese                |
-| manjericao               | manteiga                | milho                  | molho_barbecue          |
-| molho_de_tomate          | molho_shoyu             | morango                | mostarda                |
-| nozes                    | noz_moscada             | oregano                | ovo                     |
-| ovo_frito                | palmito                 | pao_de_forma           | pao_frances             |
-| peito_de_peru           | pimentao                | pimenta_calabresa      | pimenta_do_reino        |
-| pimenta_vermelha         | presunto                | queijo                 | mussarela               |
-| parmesao                 | gorgonzola              | provolone              | ricota                  |
-| rucula                   | sal                     | salsinha               | sardinha                |
-| tomate                   | tomilho                 | vinagre                |                         |
+| | Ingrediente            |                         |                         |                         |
+|--------------------------|-------------------------|-------------------------|-------------------------|
+| abacate                  | abacaxi                 | abobora                 | abobrinha               |
+| acucar                   | agua                    | alecrim                 | alface                  |
+| alho                     | aliche                  | arroz                   | atum                    |
+| aveia                    | azeite                  | azeitona                | bacon                   |
+| banana                   | batata                  | batata_doce             | batata_frita            |
+| batata_palha             | berinjela               | beterraba               | brocolis                |
+| cacau                    | calabresa               | caldo_de_carne          | caldo_de_legumes        |
+| canela                   | carne_moida             | carne_seca              | cebola                  |
+| cebola_roxa              | cebolinha               | cenoura                 | champignon              |
+| chocolate                | coco                    | couve                   | coxa_de_frango          |
+| cravo_da_india           | creme_de_leite          | default                 | ervilha                 |
+| escarola                 | espinafre               | farinha_de_rosca        | farinha_de_trigo        |
+| feijao                   | fermento                | frango_desfiado         | gengibre                |
+| grao_de_bico             | ketchup                 | kiwi                    | laranja                 |
+| leite                    | leite_condensado        | limao                   | lombo_canadense         |
+| louro                    | m&m                     | maca                    | maionese                |
+| mandioca_frita           | mandioquinha            | manga                   | manjericao              |
+| manteiga                 | maracuja                | massa_de_pizza          | milho                   |
+| molho_barbecue           | molho_de_tomate         | molho_shoyu             | morango                 |
+| mostarda                 | mussarela               | nozes                   | noz_moscada             |
+| oleo                     | oregano                 | ovo                     | ovomaltine              |
+| ovo_frito                | palmito                 | pao_de_forma            | pao_frances             |
+| parmesao                 | peito_de_peru           | pepperoni               | pera                    |
+| pimentao                 | pimenta_calabresa       | pimenta_dedo_de_moca    | pimenta_do_reino        |
+| pimenta_vermelha         | polenta                 | presunto                | provolone               |
+| queijo                   | ricota                  | rucula                  | sal                     |
+| salsicha                 | salsinha                | sardinha                | tomate                  |
+| tomate_seco              | tomilho                 | uva                     | vinagre                 |
 
 
 <details><summary><strong>Ver nomes alternativos e traduções (EN/ES/FR)</strong></summary>
