@@ -124,36 +124,19 @@ GridView.count(
   ).toList(),
 )
 ```
-| | Ingrediente            |                         |                         |                         |
-|--------------------------|-------------------------|-------------------------|-------------------------|
-| abacate                  | abacaxi                 | abobora                 | abobrinha               |
-| acucar                   | agua                    | alecrim                 | alface                  |
-| alho                     | aliche                  | arroz                   | atum                    |
-| aveia                    | azeite                  | azeitona                | bacon                   |
-| banana                   | batata                  | batata_doce             | batata_frita            |
-| batata_palha             | berinjela               | beterraba               | brocolis                |
-| cacau                    | calabresa               | caldo_de_carne          | caldo_de_legumes        |
-| canela                   | carne_moida             | carne_seca              | cebola                  |
-| cebola_roxa              | cebolinha               | cenoura                 | champignon              |
-| chocolate                | coco                    | couve                   | coxa_de_frango          |
-| cravo_da_india           | creme_de_leite          | default                 | ervilha                 |
-| escarola                 | espinafre               | farinha_de_rosca        | farinha_de_trigo        |
-| feijao                   | fermento                | frango_desfiado         | gengibre                |
-| grao_de_bico             | ketchup                 | kiwi                    | laranja                 |
-| leite                    | leite_condensado        | limao                   | lombo_canadense         |
-| louro                    | m&m                     | maca                    | maionese                |
-| mandioca_frita           | mandioquinha            | manga                   | manjericao              |
-| manteiga                 | maracuja                | massa_de_pizza          | milho                   |
-| molho_barbecue           | molho_de_tomate         | molho_shoyu             | morango                 |
-| mostarda                 | mussarela               | nozes                   | noz_moscada             |
-| oleo                     | oregano                 | ovo                     | ovomaltine              |
-| ovo_frito                | palmito                 | pao_de_forma            | pao_frances             |
-| parmesao                 | peito_de_peru           | pepperoni               | pera                    |
-| pimentao                 | pimenta_calabresa       | pimenta_dedo_de_moca    | pimenta_do_reino        |
-| pimenta_vermelha         | polenta                 | presunto                | provolone               |
-| queijo                   | ricota                  | rucula                  | sal                     |
-| salsicha                 | salsinha                | sardinha                | tomate                  |
-| tomate_seco              | tomilho                 | uva                     | vinagre                 |
+| **Categoria**         | **Ingredientes** |
+|-----------------------|------------------|
+| **Frutas**            | abacate<br>abacaxi<br>açaí<br>banana<br>cereja<br>cupuaçu<br>kiwi<br>laranja<br>lichia<br>limão<br>maçã<br>mamão<br>manga<br>maracujá<br>melancia<br>melão<br>morango<br>pêra<br>pitaya<br>tâmara<br>uva |
+| **Verduras e Legumes**| abobora<br>abobrinha<br>acelga<br>agrião<br>aipo<br>alface<br>alho<br>alho poró<br>batata<br>batata doce<br>berinjela<br>beterraba<br>brocolis<br>cebola<br>cebola roxa<br>cebolinha<br>cenoura<br>chuchu<br>coentro<br>couve<br>couve de bruxelas<br>couve flor<br>espinafre<br>escarola<br>gengibre<br>hortelã<br>louro<br>manjericão<br>nabo<br>pepino<br>pimentão<br>rabanete<br>repolho<br>rúcula<br>salsão<br>salsinha<br>tomate |
+| **Temperos e Condimentos**| alecrim<br>azeite<br>azeitona<br>canela<br>cravo da india<br>ketchup<br>mostarda<br>molho barbecue<br>molho branco<br>molho de pimenta<br>molho de tomate<br>molho pesto<br>molho shoyu<br>orégano<br>pimenta calabresa<br>pimenta dedo de moca<br>pimenta do reino<br>pimenta vermelha<br>sal<br>tomilho<br>vinagre |
+| **Carnes e Peixes**   | aliche<br>atum<br>bacon<br>calabresa<br>carne moída<br>carne seca<br>coxa de frango<br>frango desfiado<br>lombo canadense<br>peito de peru<br>presunto<br>salmão<br>sardinha<br>salsicha |
+| **Laticínios**        | catupiry<br>creme de leite<br>leite<br>leite condensado<br>leite de coco<br>manteiga<br>maionese<br>queijo<br>queijo ralado<br>yogurt |
+| **Cereais e Grãos**   | arroz<br>aveia<br>farinha de rosca<br>farinha de trigo<br>feijão<br>granola<br>grãos<br>grão de bico<br>milho<br>polvilho azedo<br>polvilho doce<br>spaghetti |
+| **Oleaginosas e Castanhas** | amendoa<br>castanha de caju<br>castanha do para<br>nozes<br>noz moscada<br>pistache |
+| **Massas e Pães**     | biscoito<br>bolacha champagne<br>croissant<br>esfirra aberta<br>esfirra fechada<br>massa de lasanha<br>massa de pizza<br>massa folhada<br>pão de forma<br>pão frances |
+| **Doces e Sobremesas**| brigadeiro<br>chocolate<br>coco<br>mel<br>m&m<br>ovomaltine<br>paçoca<br>suspiro |
+| **Bebidas**           | água<br>café<br>cerveja<br>guaraná<br>refrigerante |
+| **Outros**            | caldo de carne<br>caldo de legumes<br>default<br>ovo<br>ovo frito<br>palmito<br>polenta |
 
 
 <details><summary><strong>Ver nomes alternativos e traduções (EN/ES/FR)</strong></summary>

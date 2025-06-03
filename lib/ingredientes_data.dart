@@ -104,5 +104,65 @@ const ingredientAliases = {
   "polenta": [ "polenta", "polenta", "polenta", "polenta" ],
   "salsicha": [ "salsicha", "sausage", "salchicha", "saucisse" ],
   "tomate_seco": [ "tomate seco", "sun-dried tomato", "tomate seco", "tomate séchée" ],
-  "uva": [ "uva", "grape", "uva", "raisin" ]
+  "uva": [ "uva", "grape", "uva", "raisin" ],
+  "acai": [ "açaí", "acai berry", "açaí", "açai" ],
+  "acelga": [ "acelga", "swiss chard", "acelga", "blette" ], // ou "bette à carde"
+  "agriao": [ "agrião", "watercress", "berro", "cresson" ],
+  "aipo": [ "aipo", "celery", "apio", "céleri" ], // Também conhecido como salsão em PT
+  "alho_poro": [ "alho poró", "leek", "puerro", "poireau" ],
+  "amendoa": [ "amêndoa", "almond", "almendra", "amande" ],
+  "biscoito": [ "biscoito", "cookie", "galleta", "biscuit" ], // "biscuit" em UK English é diferente
+  "bolacha_champagne": [ "bolacha champagne", "ladyfinger", "bizcocho de soletilla", "biscuit à la cuillère" ], // ou "savoiardi"
+  "brigadeiro": [ "brigadeiro", "brigadeiro", "brigadeiro", "brigadeiro" ], // Doce brasileiro, geralmente não traduzido
+  "cafe": [ "café", "coffee", "café", "café" ],
+  "castanha_de_caju": [ "castanha de caju", "cashew nut", "anacardo", "noix de cajou" ], // "marañón" em alguns lugares ES
+  "castanha_do_para": [ "castanha do pará", "brazil nut", "nuez de Brasil", "noix du Brésil" ],
+  "catupiry": [ "catupiry", "catupiry cheese", "queso catupiry", "fromage catupiry" ], // Marca brasileira
+  "cereja": [ "cereja", "cherry", "cereza", "cerise" ],
+  "cerveja": [ "cerveja", "beer", "cerveza", "bière" ],
+  "chuchu": [ "chuchu", "chayote", "chayote", "chayotte" ], // ou "christophine"
+  "coentro": [ "coentro", "coriander", "cilantro", "coriandre" ], // "Cilantro" refere-se às folhas em EN, "coriander" às sementes ou ambos
+  "couve_de_bruxelas": [ "couve de bruxelas", "brussels sprouts", "coles de Bruselas", "chou de Bruxelles" ],
+  "couve_flor": [ "couve-flor", "cauliflower", "coliflor", "chou-fleur" ],
+  "croissant": [ "croissant", "croissant", "cruasán", "croissant" ], // Chave corrigida para 'croissant'
+  "cupuacu": [ "cupuaçu", "cupuacu", "cupuaçu", "cupuaçu" ], // Fruta amazônica
+  "esfirra_aberta": [ "esfirra aberta", "open sfikha", "esfiha abierta", "sfikha ouverte" ],
+  "esfirra_fechada": [ "esfirra fechada", "closed sfikha", "esfiha cerrada", "sfikha fermée" ],
+  "gergelim": [ "gergelim", "sesame seed", "sésamo", "sésame" ], // ou "ajonjolí" em ES
+  "granola": [ "granola", "granola", "granola", "granola" ],
+  "graos": [ "grãos", "grains", "granos", "grains" ], // Genérico
+  "guaco": [ "guaco", "guaco", "guaco", "liane mexicaine" ], // Planta medicinal
+  "guarana": [ "guaraná", "guarana", "guaraná", "guarana" ],
+  "hortela": [ "hortelã", "mint", "menta", "menthe" ],
+  "leite_de_coco": [ "leite de coco", "coconut milk", "leche de coco", "lait de coco" ],
+  "lichia": [ "lichia", "lychee", "lichi", "litchi" ],
+  "spaghetti": [ "macarrão espaguete", "spaghetti", "espaguetis", "spaghetti" ], // Chave presumida, pode ser 'espaguete'
+  "mamao": [ "mamão", "papaya", "papaya", "papaye" ],
+  "massa_de_lasanha": [ "massa de lasanha", "lasagna noodles", "láminas de lasaña", "feuilles de lasagne" ],
+  "massa_folhada": [ "massa folhada", "puff pastry", "hojaldre", "pâte feuilletée" ],
+  "massa_de_pizza": [ "massa de pizza", "pizza dough", "masa de pizza", "pâte à pizza" ],
+  "mel": [ "mel", "honey", "miel", "miel" ],
+  "melancia": [ "melancia", "watermelon", "sandía", "pastèque" ],
+  "melao": [ "melão", "melon", "melón", "melon" ], // Pode ser mais específico (cantaloupe, honeydew)
+  "molho_branco": [ "molho branco", "white sauce", "salsa blanca", "sauce béchamel" ], // Béchamel é um tipo específico
+  "molho_de_pimenta": [ "molho de pimenta", "hot sauce", "salsa picante", "sauce piquante" ],
+  "molho_pesto": [ "molho pesto", "pesto sauce", "salsa pesto", "sauce pesto" ],
+  "nabo": [ "nabo", "turnip", "nabo", "navet" ],
+  "pacoca": [ "paçoca", "paçoca", "paçoca", "paçoca" ], // Doce brasileiro
+  "pepino": [ "pepino", "cucumber", "pepino", "concombre" ],
+  "picles_em_conserva": [ "picles em conserva", "pickles", "pepinillos en vinagre", "cornichons" ], // "pickled cucumbers"
+  "pistache": [ "pistache", "pistachio", "pistacho", "pistache" ],
+  "pitaya": [ "pitaya", "dragon fruit", "pitahaya", "fruit du dragon" ],
+  "polvilho_azedo": [ "polvilho azedo", "sour cassava starch", "almidón agrio de yuca", "fécule de manioc sure" ],
+  "polvilho_doce": [ "polvilho doce", "sweet cassava starch", "almidón dulce de yuca", "fécule de manioc douce" ],
+  "queijo_ralado": [ "queijo ralado", "grated cheese", "queso rallado", "fromage râpé" ],
+  "rabanete": [ "rabanete", "radish", "rábano", "radis" ],
+  "refrigerante": [ "refrigerante", "soda", "refresco", "soda" ], // "soft drink", "pop"
+  "repolho": [ "repolho", "cabbage", "repollo", "chou" ], // ou "col" em ES
+  "salmao": [ "salmão", "salmon", "salmón", "saumon" ],
+  "salsao": [ "salsão", "celery", "apio", "céleri" ], // Sinônimo de aipo
+  "shimeji": [ "shimeji", "shimeji mushroom", "hongo shimeji", "champignon shimeji" ],
+  "suspiro": [ "suspiro", "meringue", "merengue", "meringue" ],
+  "tamara": [ "tâmara", "date", "dátil", "datte" ],
+  "yogurt": [ "iogurte", "yogurt", "yogur", "yaourt" ] // Chave "yogurt", nome PT "iogurte"
 };
