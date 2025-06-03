@@ -67,7 +67,7 @@ BrIngredienteIconSmart(nome: 'bread', size: 48),     // -> pao_de_forma
 No seu pubspec.yaml:
 ```yaml
 dependencies:
-  br_ingredientes_icons: ^1.0.0
+  br_ingredientes_icons: ^1.0.5
 ```
 Depois:
 ```bash
