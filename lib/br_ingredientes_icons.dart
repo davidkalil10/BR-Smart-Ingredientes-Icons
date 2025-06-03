@@ -1,16 +1,22 @@
 import 'package:flutter/widgets.dart';
 import 'ingredientes_data.dart';
 
+/// Um widget que exibe um ícone de ingrediente a partir de um asset PNG.
 class BrIngredienteIcon extends StatelessWidget {
+
+  /// Nome do arquivo do ingrediente (sem a extensão .png)
   final String nome; // nome do asset (SEM .png)
+  /// Tamanho do ícone.
   final double size;
+  /// Cor a ser aplicada no ícone (opcional).
   final Color? color;
+  /// Cria um ícone de ingrediente com base no nome do asset.
   const BrIngredienteIcon({
-    Key? key,
+    super.key,
     required this.nome,
     this.size = 24,
     this.color,
-  }) : super(key: key);
+  });
   @override
   Widget build(BuildContext context) {
     return Image.asset(
@@ -24,6 +30,8 @@ class BrIngredienteIcon extends StatelessWidget {
   }
 }
 
+/// Normaliza uma string para facilitar a busca de ingredientes.
+/// Remove acentos, espaços, pontuações e transforma em minúsculas.
 String normalize(String s) {
   // Remove espaços, acentos, pontuação e coloca tudo minúsculo
   const accents = {
@@ -41,6 +49,8 @@ String normalize(String s) {
       .replaceAll(RegExp(r'[^a-z0-9]'), '');
 }
 
+/// Tenta encontrar o nome normalizado de um ingrediente com base em aliases.
+/// Retorna `null` se nenhum nome corresponder.
 String? matchIngredienteNome(String query) {
   final normQuery = normalize(query);
 
@@ -63,18 +73,22 @@ String? matchIngredienteNome(String query) {
   return null;
 }
 
+/// Um widget inteligente que tenta reconhecer o nome do ingrediente informado
+/// e exibe o ícone correspondente. Usa um fallback se o nome não for reconhecido.
 class BrIngredienteIconSmart extends StatelessWidget {
   final String nome;
   final double size;
   final Color? color;
+  /// Nome do asset usado caso o ingrediente não seja reconhecido.
   final String fallback;
+  /// Cria um ícone inteligente que reconhece o nome do ingrediente.
   const BrIngredienteIconSmart({
-    Key? key,
+    super.key,
     required this.nome,
     this.size = 24,
     this.color,
     this.fallback = 'default',
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

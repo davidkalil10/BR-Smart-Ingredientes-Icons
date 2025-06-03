@@ -10,7 +10,7 @@ Uma **coleção de ícones PNG com reconhecimento inteligente de nomes** de ingr
 
 O `br_ingredientes_icons` oferece:
 
-- **Mais de 70 ícones exclusivos** de alimentos e ingredientes encontrados em receitas do Brasil
+- **Mais de 160 ícones exclusivos** de alimentos e ingredientes encontrados em receitas do Brasil
 - Identificação automática do ingrediente digitado, mesmo com nomes em inglês, espanhol, francês, sinônimos ou pequenas variações
 - Suporte a fallback: se não encontrar o ingrediente, exibe um ícone padrão
 - **Customização de cor** (para ícones monocromáticos)

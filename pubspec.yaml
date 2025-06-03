@@ -1,8 +1,16 @@
 name: br_ingredientes_icons
 description: Ícones PNG e busca inteligente de ingredientes para Flutter (brasileiro/multilíngue).
-version: 1.0.3
+version: 1.0.4
 homepage: https://github.com/davidkalil10/BR-Smart-Ingredientes-Icons
 repository: https://github.com/davidkalil10/BR-Smart-Ingredientes-Icons
+platforms:
+  android:
+  ios:
+  web:
+  macos:
+  windows:
+  linux:
+
 environment:
   sdk: '>=3.1.5 <4.0.0'
   flutter: ">=1.17.0"
@@ -14,7 +22,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -23,7 +31,7 @@ dev_dependencies:
 flutter:
   assets:
     - assets/icons/
-    -
+
   # To add assets to your package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
