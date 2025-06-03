@@ -3,13 +3,14 @@ import 'ingredientes_data.dart';
 
 /// Um widget que exibe um ícone de ingrediente a partir de um asset PNG.
 class BrIngredienteIcon extends StatelessWidget {
-
   /// Nome do arquivo do ingrediente (sem a extensão .png)
   final String nome; // nome do asset (SEM .png)
   /// Tamanho do ícone.
   final double size;
+
   /// Cor a ser aplicada no ícone (opcional).
   final Color? color;
+
   /// Cria um ícone de ingrediente com base no nome do asset.
   const BrIngredienteIcon({
     super.key,
@@ -35,17 +36,38 @@ class BrIngredienteIcon extends StatelessWidget {
 String normalize(String s) {
   // Remove espaços, acentos, pontuação e coloca tudo minúsculo
   const accents = {
-    'á':'a', 'à':'a', 'ã':'a', 'â':'a', 'ä':'a', 'å':'a',
-    'é':'e', 'è':'e', 'ê':'e', 'ë':'e',
-    'í':'i', 'ì':'i', 'î':'i', 'ï':'i',
-    'ó':'o', 'ò':'o', 'ô':'o', 'õ':'o', 'ö':'o',
-    'ú':'u', 'ù':'u', 'û':'u', 'ü':'u',
-    'ç':'c', 'ñ':'n', 'œ':'oe', 'æ':'ae'
+    'á': 'a',
+    'à': 'a',
+    'ã': 'a',
+    'â': 'a',
+    'ä': 'a',
+    'å': 'a',
+    'é': 'e',
+    'è': 'e',
+    'ê': 'e',
+    'ë': 'e',
+    'í': 'i',
+    'ì': 'i',
+    'î': 'i',
+    'ï': 'i',
+    'ó': 'o',
+    'ò': 'o',
+    'ô': 'o',
+    'õ': 'o',
+    'ö': 'o',
+    'ú': 'u',
+    'ù': 'u',
+    'û': 'u',
+    'ü': 'u',
+    'ç': 'c',
+    'ñ': 'n',
+    'œ': 'oe',
+    'æ': 'ae'
   };
   return s
       .toLowerCase()
-      .replaceAllMapped(RegExp(r'[áàãâäåéèêëíìîïóòôõöúùûüçñœæ]'),
-          (m) => accents[m[0]] ?? '')
+      .replaceAllMapped(
+          RegExp(r'[áàãâäåéèêëíìîïóòôõöúùûüçñœæ]'), (m) => accents[m[0]] ?? '')
       .replaceAll(RegExp(r'[^a-z0-9]'), '');
 }
 
@@ -79,8 +101,10 @@ class BrIngredienteIconSmart extends StatelessWidget {
   final String nome;
   final double size;
   final Color? color;
+
   /// Nome do asset usado caso o ingrediente não seja reconhecido.
   final String fallback;
+
   /// Cria um ícone inteligente que reconhece o nome do ingrediente.
   const BrIngredienteIconSmart({
     super.key,

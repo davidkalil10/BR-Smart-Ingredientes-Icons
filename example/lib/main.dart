@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:br_ingredientes_icons/br_ingredientes_icons.dart';
 
-
 /*final List<String> ingredientes = [
   'abobrinha',
   'acucar',
@@ -60,7 +59,7 @@ final List<String> ingredientes = [
   'cacau',
   'café',
   'calabresa',
-  'caldo de carne',     // Assumindo que o arquivo é caldo_de_carne.png
+  'caldo de carne', // Assumindo que o arquivo é caldo_de_carne.png
   'caldo de legumes',
   'canela',
   'carne moída',
@@ -93,11 +92,11 @@ final List<String> ingredientes = [
   'esfirra aberta',
   'esfirra fechada',
   'espinafre',
-  'farinha de rosca',  // Assumindo que o arquivo é farinha_de_rosca.png
-  'farinha de trigo',   // Assumindo que o arquivo é farinha_de_trigo.png
+  'farinha de rosca', // Assumindo que o arquivo é farinha_de_rosca.png
+  'farinha de trigo', // Assumindo que o arquivo é farinha_de_trigo.png
   'feijão',
   'fermento',
-  'frango desfiado',    // Assumindo que o arquivo é frango_desfiado.png
+  'frango desfiado', // Assumindo que o arquivo é frango_desfiado.png
   'gengibre',
   'gergelim',
   'granola',
@@ -141,7 +140,7 @@ final List<String> ingredientes = [
   'molho shoyu',
   'morango',
   'mostarda',
-  'm&m',             // Para M&M's, se o arquivo for m_e_m.png
+  'm&m', // Para M&M's, se o arquivo for m_e_m.png
   'nabo',
   'nozes',
   'noz moscada',
