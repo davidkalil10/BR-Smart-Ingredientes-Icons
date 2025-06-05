@@ -1,0 +1,36 @@
+name: Deploy Example Web to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # (ou 'master', conforme seu branch principal)
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Get dependencies (root)
+        run: flutter pub get
+
+      - name: Get dependencies (example)
+        run: flutter pub get
+        working-directory: example
+
+      - name: Build example web
+        run: flutter build web --release
+        working-directory: example
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./example/build/web
