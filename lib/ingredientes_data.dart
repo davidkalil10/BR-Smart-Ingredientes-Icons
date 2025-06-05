@@ -493,8 +493,18 @@ const ingredientAliases = {
     "yogur",
     "yaourt"
   ], // Chave "yogurt", nome PT "iogurte"
-  "carambola": [ "carambola", "star fruit", "carambola", "carambole" ],
-  "jabuticaba": [ "jabuticaba", "jabuticaba", "jaboticaba", "jaboticaba" ], // Fruta brasileira, nome similar em outros idiomas
-  "jaca": [ "jaca", "jackfruit", "yaca", "jacquier" ],
-  "pessego": [ "pêssego", "peach", "melocotón", "pêche" ] // "durazno" também em ES
+  "carambola": ["carambola", "star fruit", "carambola", "carambole"],
+  "jabuticaba": [
+    "jabuticaba",
+    "jabuticaba",
+    "jaboticaba",
+    "jaboticaba"
+  ], // Fruta brasileira, nome similar em outros idiomas
+  "jaca": ["jaca", "jackfruit", "yaca", "jacquier"],
+  "pessego": [
+    "pêssego",
+    "peach",
+    "melocotón",
+    "pêche"
+  ] // "durazno" também em ES
 };
