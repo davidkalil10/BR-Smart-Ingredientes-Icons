@@ -45,6 +45,10 @@ Icon(BRIngredientesIconsFont.cheese, color: Colors.amber, size: 48,),
 
 Veja um exemplo completo de implementação no arquivo [`example/lib/main.dart`](example/lib/main.dart), que demonstra como criar uma grade de ingredientes com ícones em cards estilizados usando o widget `BrIngredienteIconSmart`.
 
+## 🌐 Web Demo
+
+👉 [Acesse aqui a demonstração online com busca instantânea de todos os ícones](https://davidkalil10.github.io/BR-Smart-Ingredientes-Icons/)
+
 ## 🧠 Buscas inteligentes
 Aceita o nome do ingrediente:
 
@@ -75,7 +79,7 @@ BrIngredienteIconSmart(nome: 'bread', size: 48),     // -> pao_de_forma
 No seu pubspec.yaml:
 ```yaml
 dependencies:
-  br_ingredientes_icons: ^2.0.0
+  br_ingredientes_icons: ^2.0.1
 ```
 Depois:
 ```bash

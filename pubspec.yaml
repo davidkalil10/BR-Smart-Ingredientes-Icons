@@ -1,7 +1,7 @@
 name: br_ingredientes_icons
 description: Ícones PNG e busca inteligente de ingredientes para Flutter (brasileiro/multilíngue).
-version: 2.0.0
-homepage: https://github.com/davidkalil10/BR-Smart-Ingredientes-Icons
+version: 2.0.1
+homepage: https://davidkalil10.github.io/BR-Smart-Ingredientes-Icons/
 repository: https://github.com/davidkalil10/BR-Smart-Ingredientes-Icons
 platforms:
   android:
