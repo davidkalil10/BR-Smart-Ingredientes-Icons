@@ -31,7 +31,7 @@ jobs:
         working-directory: example
 
       - name: Build example web
-        run: flutter build web --release
+        run: flutter build web --release --base-href /BR-Smart-Ingredientes-Icons/
         working-directory: example
 
       - name: Deploy to GitHub Pages
