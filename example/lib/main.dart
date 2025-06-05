@@ -1,3 +1,4 @@
+import 'package:br_ingredientes_icons/BRIngredientesIconsFont_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:br_ingredientes_icons/br_ingredientes_icons.dart';
 
@@ -62,6 +63,7 @@ final List<String> ingredientes = [
   'caldo de carne', // Assumindo que o arquivo é caldo_de_carne.png
   'caldo de legumes',
   'canela',
+  'carambola',
   'carne moída',
   'carne seca',
   'castanha de caju',
@@ -105,6 +107,8 @@ final List<String> ingredientes = [
   'guaco',
   'guaraná',
   'hortelã',
+  'jabuticaba',
+  'jaca',
   'ketchup',
   'kiwi',
   'laranja',
@@ -156,6 +160,7 @@ final List<String> ingredientes = [
   'peito de peru',
   'pepino',
   'pepperoni',
+  'pêssego',
   'pêra',
   'picles em conserva',
   'pimentão',
@@ -217,6 +222,7 @@ class IngredientesIconsGrid extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Ícones de Ingredientes'),
+        leading: Icon(BRIngredientesIconsFont.kiwi, color: Colors.black, size: 40,),
         centerTitle: true,
       ),
       body: Padding(
