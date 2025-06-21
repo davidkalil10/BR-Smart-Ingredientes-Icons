@@ -506,5 +506,160 @@ const ingredientAliases = {
     "peach",
     "melocotón",
     "pêche"
-  ] // "durazno" também em ES
+  ], // "durazno" também em ES
+  'acaraje': ['acarajé', 'acaraje', 'acarajé', 'acarajé'],
+  'acerola': ['acerola', 'acerola', 'acerola', 'acerola'],
+  'arroz_carreteiro': [
+    'arroz carreteiro',
+    'carreteiro rice',
+    'arroz carreteiro',
+    'riz carreteiro'
+  ],
+  'arroz_doce': [
+    'arroz doce',
+    'rice pudding',
+    'arroz con leche',
+    'riz au lait'
+  ],
+  'bala_de_coco': [
+    'bala de coco',
+    'coconut candy',
+    'caramelo de coco',
+    'bonbon à la noix de coco'
+  ],
+  'barra_de_cereal': [
+    'barra de cereal',
+    'cereal bar',
+    'barra de cereal',
+    'barre de céréales'
+  ],
+  'beijinho': ['beijinho', 'beijinho', 'beijinho', 'beijinho'],
+  'bicho_de_pe': [
+    'bicho de pé',
+    'strawberry truffle',
+    'bicho de pie',
+    'truffe à la fraise'
+  ],
+  'biscoito_recheado': [
+    'biscoito recheado',
+    'filled cookie',
+    'galleta rellena',
+    'biscuit fourré'
+  ],
+  'bobo_de_camarao': [
+    'bobó de camarão',
+    'shrimp bobo',
+    'bobó de camarón',
+    'bobó de crevettes'
+  ],
+  'bolinho_de_chuva': [
+    'bolinho de chuva',
+    'rain fritter',
+    'buñuelo de lluvia',
+    'beignet de pluie'
+  ],
+  'bolo': ['bolo', 'cake', 'pastel', 'gâteau'],
+  'cajuzinho': ['cajuzinho', 'peanut sweet', 'dulce de cacahuete', 'cajuzinho'],
+  'caldo_de_cana': [
+    'caldo de cana',
+    'sugarcane juice',
+    'jugo de caña',
+    'jus de canne à sucre'
+  ],
+  'canjica': ['canjica', 'canjica', 'canjica', 'canjica'],
+  'cha_gelado': ['chá gelado', 'iced tea', 'té helado', 'thé glacé'],
+  'churrasco': ['churrasco', 'barbecue', 'asado', 'barbecue'],
+  'churros': ['churros', 'churros', 'churros', 'churros'],
+  'coxinha': ['coxinha', 'coxinha', 'coxinha', 'coxinha'],
+  'crepe': ['crepe', 'crepe', 'crepa', 'crêpe'],
+  'curau': ['curau', 'corn pudding', 'curau', 'crème de maïs'],
+  'cuscuz_nordestino': [
+    'cuscuz nordestino',
+    'northeastern couscous',
+    'cuscús nordestino',
+    'couscous nordestin'
+  ],
+  'doce_de_leite': [
+    'doce de leite',
+    'dulce de leche',
+    'dulce de leche',
+    'confiture de lait'
+  ],
+  'empada': ['empada', 'savoury tart', 'empanada', 'quiche salée'],
+  'empanada': ['empanada', 'empanada', 'empanada', 'empanada'],
+  'enroladinho_de_salsicha': [
+    'enroladinho de salsicha',
+    'pigs in a blanket',
+    'salchicha envuelta',
+    'feuilleté à la saucisse'
+  ],
+  'fatia_de_bolo': [
+    'fatia de bolo',
+    'slice of cake',
+    'rebanada de pastel',
+    'part de gâteau'
+  ],
+  'fatia_de_pizza': [
+    'fatia de pizza',
+    'slice of pizza',
+    'porción de pizza',
+    'part de pizza'
+  ],
+  'fatia_de_torta': [
+    'fatia de torta',
+    'slice of pie',
+    'porción de tarta',
+    'part de tarte'
+  ],
+  'feijoada': ['feijoada', 'feijoada', 'feijoada', 'feijoada'],
+  'galinhada': ['galinhada', 'galinhada', 'galinhada', 'galinhada'],
+  'gelatina': ['gelatina', 'gelatin', 'gelatina', 'gélatine'],
+  'hamburger': ['hambúrguer', 'hamburger', 'hamburguesa', 'hamburger'],
+  'hot_dog': ['hot dog', 'hot dog', 'hot dog', 'hot dog'],
+  'kibe': ['kibe', 'kibe', 'kibe', 'kibbeh'],
+  'lasanha': ['lasanha', 'lasagna', 'lasaña', 'lasagne'],
+  'manicoba': ['maniçoba', 'manicoba', 'manicoba', 'manicoba'],
+  'marmita': ['marmita', 'lunch box', 'fiambrera', 'box repas'],
+  'moqueca': ['moqueca', 'moqueca', 'moqueca', 'moqueca'],
+  'mousse': ['mousse', 'mousse', 'mousse', 'mousse'],
+  'omelete': ['omelete', 'omelet', 'tortilla francesa', 'omelette'],
+  'pamonha': ['pamonha', 'pamonha', 'pamonha', 'pamonha'],
+  'panqueca': ['panqueca', 'pancake', 'panqueque', 'crêpe épaisse'],
+  'pao_de_queijo': [
+    'pão de queijo',
+    'cheese bread',
+    'pan de queso',
+    'pain au fromage'
+  ],
+  'pastel': ['pastel', 'pastry', 'pastel', 'pâté'],
+  'picole': ['picolé', 'popsicle', 'paleta', 'glace à l’eau'],
+  'pipoca': ['pipoca', 'popcorn', 'palomitas', 'pop-corn'],
+  'pitanga': ['pitanga', 'surinam cherry', 'pitanga', 'cerisier de cayenne'],
+  'pizza': ['pizza', 'pizza', 'pizza', 'pizza'],
+  'prato_feito': ['prato feito', 'set meal', 'menú del día', 'menu du jour'],
+  'pudim': ['pudim', 'flan', 'flan', 'flan'],
+  'quindim': ['quindim', 'quindim', 'quindim', 'quindim'],
+  'rabanada': ['rabanada', 'french toast', 'torrija', 'pain perdu'],
+  'salada': ['salada', 'salad', 'ensalada', 'salade'],
+  'sanduiche_natural': [
+    'sanduíche natural',
+    'natural sandwich',
+    'sándwich natural',
+    'sandwich naturel'
+  ],
+  'sorvete': ['sorvete', 'ice cream', 'helado', 'glace'],
+  'strogonoff': ['strogonoff', 'stroganoff', 'strogonoff', 'bœuf stroganoff'],
+  'suco_natural': [
+    'suco natural',
+    'natural juice',
+    'jugo natural',
+    'jus naturel'
+  ],
+  'tacaca': ['tacacá', 'tacaca', 'tacacá', 'tacacá'],
+  'tapioca': ['tapioca', 'tapioca pancake', 'tapioca', 'galette de tapioca'],
+  'torrada': ['torrada', 'toast', 'tostada', 'toast'],
+  'torta': ['torta', 'pie', 'tarta', 'tarte'],
+  'vatapa': ['vatapá', 'vatapa', 'vatapá', 'vatapa'],
+  'vitamina': ['vitamina', 'smoothie', 'batido de frutas', 'smoothie'],
+  'yakisoba': ['yakisoba', 'yakisoba', 'yakisoba', 'yakisoba']
 };
